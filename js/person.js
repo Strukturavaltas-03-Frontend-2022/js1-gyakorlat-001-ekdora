@@ -1,12 +1,12 @@
-let defaultPerson = { firstName: "John", lastName: "Doe", age: "33" };
-let person = { firstName: "Dóra", lastName: "Kiss", age: "33" };
-let person2 = { firstName: "", lastName: "", age: "" };
+let defaultPerson = { firstname: "John", lastname: "Doe", age: "33" };
+let person = { firstname: "Dóra", lastname: "Kiss", age: "33" };
+let person2 = { firstname: "", lastname: "", age: "" };
 
 const personDataLog = (person) => {
-  const firstName = person.firstName || defaultPerson.firstName;
-  const lastName = person.lastName || defaultPerson.lastName;
+  const firstname = person.firstname || defaultPerson.firstname;
+  const lastname = person.lastname || defaultPerson.lastname;
   const age = person.age || defaultPerson.age;
-  console.log(`My name is ${firstName} ${lastName}, and I'm ${age} years old.`);
+  return `My name is ${firstname} ${lastname}, and I'm ${age} years old.`;
 }
 
 personDataLog(person);

@@ -1,4 +1,4 @@
-let elements = document.getElementsByClassName("button");
+const elements = document.getElementsByClassName("button");
 
 const handleClick = (element) => {
   if (element) {
@@ -9,4 +9,3 @@ const handleClick = (element) => {
 for (let i = 0; i < elements.length; i++) {
   handleClick(elements[i]);
 }
-
